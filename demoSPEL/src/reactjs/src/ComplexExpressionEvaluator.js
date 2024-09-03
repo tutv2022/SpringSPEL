@@ -33,7 +33,9 @@ function ComplexExpressionEvaluator() {
   const handleEvaluate = async () => {
     // Define the expression using multiple variables
     const expression =
-      "screen.forms['Form 1'].elements['E2'].name == 'Element 3' && user.role == 'Admin' && config.isEnabled == false";
+      //"screen.forms['Form 1'].elements['E2'].name == 'Element 3'";
+      "user.role == 'Admin' && config.isEnabled == true";
+    //   "screen.forms['Form 1'].elements['E2'].name == 'Element 3' && user.role == 'Admin' && config.isEnabled == false";
 
     try {
       // Evaluate the expression with multiple variables
